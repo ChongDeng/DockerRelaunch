@@ -1,0 +1,5 @@
+run command:
+  docker-compose scale web=5 loadbalancer=1
+
+quere command:
+  for request in `seq 1 13`; do curl http://127.0.0.1:8080; done
